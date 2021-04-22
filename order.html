@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head><base href="./">
+		<meta charset="utf-8" />
+		<title>Order | Mumara One</title>
+		<meta name="description" content="." />
+		<meta name="keywords" content="" />
+		<link rel="canonical" href="https://www.mumara.com" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<link href="css/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/order.css">
+		<link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
+	</head>
+	<body id="kt_body" class="bg-white header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+		<div class="d-flex flex-column flex-root">
+			<div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-size1: 100% 50%; background-image: url(img/progress.svg)">
+				<div class="loading" id="loading"><div class="loader"></div></div>
+				<div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
+					<a href="index.html" class="mb-12">
+						<img alt="Logo" src="img/logo.png" class="h-45px" />
+					</a>
+					<div id="kt_content_container" class="container">
+						<div class="row g-xxl-9">
+							<div class="col-xxl-9">
+								<div class="bg-white rounded shadow-sm">
+									<div class="card order-block">
+									    <div class="card-header">
+									        <h3 class="card-title">
+									        	<ul class="breadcrums">
+							                        <li id="nav1">
+							                            <a href="javascript:;" class="active">Plan Information</a>
+							                        </li>
+							                        <li class="seperator">
+							                            <i class="la la-angle-right"></i>
+							                        </li>
+							                        <li id="nav2">
+							                            <a href="javascript:;">Account Information</a>
+							                        </li>
+							                        <li class="seperator sep2">
+							                            <i class="la la-angle-right"></i>
+							                        </li>
+							                        <li id="nav3" style="">
+							                            <a href="javascript:;">Billing Information</a>
+							                        </li>
+							                        <li class="seperator sep3">
+							                            <i class="la la-angle-right"></i>
+							                        </li>
+							                        <li id="nav4">
+							                            <a href="javascript:;">Payment Method</a>
+							                        </li>
+							                    </ul>
+									        </h3>
+									    </div>
+									    <div class="card-body">
+									        <!--begin::Accordion-->
+											<div class="accordion" id="kt_accordion_1">
+											    <div class="accordion-item done" id="card1">
+											        <h2 class="accordion-header" id="kt_accordion_1_header_1">
+											            <button class="accordion-button fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_1" aria-expanded="true" aria-controls="kt_accordion_1_body_1">
+											            	<i class="fa fa-check-circle"></i>
+											            	<i class="number">1</i>
+											                Package Information
+											            </button>
+											            <div class="option-edit" id="edit1"><a href="javascript:;">Edit</a></div>
+											        </h2>
+											        <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show" aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
+											            <div class="accordion-body">
+											                <div id="option-block" class="row">
+																<div class="col-lg-6">
+																	<label class="kt-option"><span class="kt-option__control"><span class="form-check form-check-custom form-check-solid"><input type="radio" name="group_id" id="group_id_3" class="statsOpts form-check-input" value="3" checked> <span></span></span>
+																		</span><span class="kt-option__label"><span class="kt-option__head"><span class="kt-option__title">Free Plan</span><span class="kt-option__focus"></span></span><span class="kt-option__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></span>
+																	</label>
+																</div>
+																<div class="col-lg-6">
+																	<label class="kt-option"><span class="kt-option__control"><span class="form-check form-check-custom form-check-solid"><input type="radio" name="group_id" id="group_id_2" class="statsOpts form-check-input" value="2"> <span></span></span>
+																		</span><span class="kt-option__label"><span class="kt-option__head"><span class="kt-option__title">Marketing &amp; Newsletters</span><span class="kt-option__focus"></span></span><span class="kt-option__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></span>
+																	</label>
+																</div>
+																<!-- <div class="col-lg-4">
+																	<label class="kt-option"><span class="kt-option__control"><span class="kt-radio kt-radio--check-bold mt-radio"><input type="radio" name="group_id" id="group_id_1" class="statsOpts" value="1"> <span></span></span>
+																		</span><span class="kt-option__label"><span class="kt-option__head"><span class="kt-option__title">Transactional &amp; Marketing</span><span class="kt-option__focus"></span></span><span class="kt-option__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></span>
+																	</label>
+																</div> -->
+															</div>
+															<div class="range-block" id="range-block-slider">
+																<div class="form-group row" id="product_slider_parent" style="display: none;">
+																	<h4 style="margin-bottom: 15px" id="package_name">10k</h4>
+																	<h5 class="emails1" id="db_email">2000 <span>Email</span></h5>
+																	<div class="kt-ion-range-slider" id="product_slider">
+																		<div id="kt_slider_marketing"></div>  
+																	</div>
+																</div>
+																<!-- <div class="form-group row" id="marketing_slider_parent" style="display: none;">
+																	<h4 style="margin-bottom: 15px" id="package_name2">Default Package</h4>
+																	<h5 class="emails1" id="db_email2">6000 <span>Email</span></h5>
+																	<div class="kt-ion-range-slider" id="product_slider2">
+																		<div id="kt_slider_marketing2"></div>  
+																	</div>
+																	<h4 style="margin-bottom: 15px" id="package_name3">Number of contacts</h4>
+																	<h5 class="emails1" id="db_email3">1000 <span>Contacts</span></h5>
+																	<div class="kt-ion-range-slider" id="product_slider3">
+																		<div id="kt_slider_marketing3"></div>  
+																	</div>
+																</div> -->
+															</div>
+															<div class="form-group m-form__group col-md-12 pb30" id="action-block">
+			                                                    <button class="btn btn-bg-primary text-inverse-primary me-2 mb-2 pull-right" type="button" id="continue1">Continue</button>
+			                                                </div>
+											            </div>
+											        </div>
+											    </div>
+
+											    <div class="accordion-item " id="card2">
+											        <h2 class="accordion-header" id="kt_accordion_1_header_2">
+											            <button class="accordion-button fs-5 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_2" aria-expanded="false" aria-controls="kt_accordion_1_body_2">
+											            	<i class="fa fa-check-circle"></i>
+											            	<i class="number">2</i>
+											            	Account Information
+											            </button>
+											            <div class="option-edit" id="edit2"><a href="javascript:;">Edit</a></div>
+											        </h2>
+											        <div id="kt_accordion_1_body_2" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_2" data-bs-parent="#kt_accordion_1">
+											            <div class="accordion-body">
+															<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form">
+																<div class="row fv-row">
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">First Name <span class="required"></span></label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="first-name" id="first-name" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Last Name <span class="required"></span></label>
+																		<input class="form-control form-control-lg" type="text" placeholder="" name="last-name" id="last-name" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Address <span class="required"></span></label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="address" id="address" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">City</label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="city" id="city" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">State</label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="state" id="state" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Post Code</label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="postcode" id="postcode" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Country <span class="required"></span></label>
+																		<select class="form-select" name="country" id="country" data-control="select2" data-placeholder="Select country">
+																			<option></option>
+																			<option value="1">Pakistan</option>
+																			<option value="2">United State</option>
+																		</select>
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Phone No <span class="required"></span></label>
+																		<input type="text" class="form-control" name="phone" id="phone" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" />
+																		<input type="hidden" name="countrycode" value="" id="ccode">
+																	</div>
+																</div>
+																<div class="form-group m-form__group col-md-12 pb30 mb-45">
+																	<button type="button" id="kt_sign_up_submit" disabled class="btn btn-lg btn-primary pull-right">
+																		<span class="indicator-label">Continue</span>
+																		<span class="indicator-progress">Please wait...
+																		<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+																	</button>
+																</div>
+															</form>
+											            </div>
+											        </div>
+											    </div>
+
+											    <div class="accordion-item  remain" id="card3">
+											        <h2 class="accordion-header" id="kt_accordion_1_header_3">
+											            <button class="accordion-button fs-5 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_3" aria-expanded="false" aria-controls="kt_accordion_1_body_3">
+											            	<i class="fa fa-check-circle"></i>
+											            	<i class="number">3</i>
+											            	Billing Information
+											            </button>
+											            <div class="option-edit" id="edit3"><a href="javascript:;">Edit</a></div>
+											        </h2>
+											        <div id="kt_accordion_1_body_3" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_3" data-bs-parent="#kt_accordion_1">
+											            <div class="accordion-body">
+															<div class="mb-7 mt-2">
+																<div class="form-check form-check-custom form-check-solid">
+																	<input class="form-check-input" checked="" type="checkbox" value="" id="same-billing"/>
+																	<label class="form-check-label" for="same-billing">
+																		Same as Account Information
+																	</label>
+																</div>
+															</div>
+															<div class="separator my-5 mb-7"></div>
+															<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form2">
+																<div class="row fv-row">
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">First Name <span class="required"></span></label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="first-name2" id="first-name2" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Last Name <span class="required"></span></label>
+																		<input class="form-control form-control-lg" type="text" placeholder="" name="last-name2" id="last-name2" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Address <span class="required"></span></label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="address2"" id="address2" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">City</label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="city2" id="city2" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">State</label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="state2" id="state2" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Post Code</label>
+																		<input class="form-control form-control-lg " type="text" placeholder="" name="postcode2" id="postcode2" autocomplete="off" />
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Country <span class="required"></span></label>
+																		<select class="form-select" name="country2" id="country2" data-control="select2" data-placeholder="Select country">
+																			<option></option>
+																			<option value="1">Pakistan</option>
+																			<option value="2">United State</option>
+																		</select>
+																	</div>
+																	<div class="col-xl-6 mb-5">
+																		<label class="form-label fw-bolder text-dark fs-6">Phone No <span class="required"></span></label>
+																		<input type="text" class="form-control" name="phone2" id="phone2" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" />
+																		<input type="hidden" name="countrycode2" value="" id="ccode2">
+																	</div>
+																</div>
+																<div class="form-group m-form__group col-md-12 pb30 mb-45">
+																	<button type="button" id="kt_sign_up_submit2" class="btn btn-lg btn-primary pull-right">
+																		<span class="indicator-label">Continue</span>
+																		<span class="indicator-progress">Please wait...
+																		<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+																	</button>
+																</div>
+															</form>
+											            </div>
+											        </div>
+											    </div>
+
+											    <div class="accordion-item remain" id="card4">
+											        <h2 class="accordion-header" id="kt_accordion_1_header_4">
+											            <button class="accordion-button fs-5 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_4" aria-expanded="false" aria-controls="kt_accordion_1_body_4">
+											            	<i class="fa fa-check-circle"></i>
+											            	<i class="number">4</i>
+											            	Payment Method
+											            </button>
+											            <div class="option-edit" id="edit4"><a href="javascript:;">Edit</a></div>
+											        </h2>
+											        <div id="kt_accordion_1_body_4" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_4" data-bs-parent="#kt_accordion_1">
+											            <div class="accordion-body">
+															<div class="card ">
+																<div id="kt_billing_creditcard">
+																	<form id="kt_modal_new_card_form" class="form" action="#">
+																		<div class="d-flex flex-column mb-7 fv-row">
+																			<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+																				<span class="required">Name On Card</span>
+																				<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a card holder's name"></i>
+																			</label>
+																			<input type="text" class="form-control form-control-solid" placeholder="" name="card_name" value="Max Doe" />
+																		</div>
+																		<div class="d-flex flex-column mb-7 fv-row">
+																			<label class="required fs-6 fw-bold form-label mb-2">Card Number</label>
+																			<div class="position-relative">
+																				<input type="text" class="form-control form-control-solid" placeholder="Enter card number" name="card_number" value="4111 1111 1111 1111" />
+																				<div class="position-absolute translate-middle-y top-50 end-0 me-5">
+																					<img src="img/visa.svg" alt="" class="h-25px" />
+																					<img src="img/mastercard.svg" alt="" class="h-25px" />
+																					<img src="img/american-express.svg" alt="" class="h-25px" />
+																				</div>
+																			</div>
+																		</div>
+																		<div class="row mb-10">
+																			<div class="col-md-8 fv-row">
+																				<label class="required fs-6 fw-bold form-label mb-2">Expiration Date</label>
+																				<div class="row fv-row">
+																					<div class="col-6">
+																						<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+																							<option></option>
+																							<option value="1">1</option>
+																							<option value="2">2</option>
+																							<option value="3">3</option>
+																							<option value="4">4</option>
+																							<option value="5">5</option>
+																							<option value="6">6</option>
+																							<option value="7">7</option>
+																							<option value="8">8</option>
+																							<option value="9">9</option>
+																							<option value="10">10</option>
+																							<option value="11">11</option>
+																							<option value="12">12</option>
+																						</select>
+																					</div>
+																					<div class="col-6">
+																						<select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
+																							<option></option>
+																							<option value="2021">2021</option>
+																							<option value="2022">2022</option>
+																							<option value="2023">2023</option>
+																							<option value="2024">2024</option>
+																							<option value="2025">2025</option>
+																							<option value="2026">2026</option>
+																							<option value="2027">2027</option>
+																							<option value="2028">2028</option>
+																							<option value="2029">2029</option>
+																							<option value="2030">2030</option>
+																							<option value="2031">2031</option>
+																						</select>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4 fv-row">
+																				<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+																					<span class="required">CVV</span>
+																					<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter a card CVV code"></i>
+																				</label>
+																				<div class="position-relative">
+																					<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv" />
+																					<div class="position-absolute translate-middle-y top-50 end-0 me-3">
+																						<span class="svg-icon svg-icon-2hx">
+																							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																									<rect x="0" y="0" width="24" height="24" />
+																									<rect fill="#000000" opacity="0.3" x="2" y="5" width="20" height="14" rx="2" />
+																									<rect fill="#000000" x="2" y="8" width="20" height="3" />
+																									<rect fill="#000000" opacity="0.3" x="16" y="14" width="4" height="2" rx="1" />
+																								</g>
+																							</svg>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="d-flex flex-stack mb-7">
+																			<div class="me-5">
+																				<label class="fs-6 fw-bold form-label">Save Card for further billing?</label>
+																				<div class="fs-7 fw-bold text-gray-400">If you need more info, please check budget planning.</div>
+																			</div>
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<span class="form-check-label fw-bold text-gray-400">Save Card</span>
+																				<input class="form-check-input" name="save_card" type="checkbox" value="1" checked="checked" />
+																			</label>
+																		</div>
+																		<div class="d-flex flex-stack mb-10">
+																			<div class="me-5">
+																				<label class="fs-6 fw-bold form-label">Subscribe Me for latest newsletters?</label>
+																				<div class="fs-7 fw-bold text-gray-400">If you need updated info, please check subscribe me switch.</div>
+																			</div>
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<span class="form-check-label fw-bold text-gray-400">Subscribe Me</span>
+																				<input class="form-check-input" name="subscribe_me" type="checkbox" value="1" checked="checked" />
+																			</label>
+																		</div>
+																		<button type="submit" id="kt_modal_new_card_submit" disabled class="btn btn-primary">
+																			<span class="indicator-label">Pay Now</span>
+																			<span class="indicator-progress">Please wait...
+																			<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+																		</button>
+																	</form>
+																</div>
+															</div>
+											            </div>
+											        </div>
+											    </div>
+											</div>
+											<!--end::Accordion-->
+									    </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xxl-3">
+								<div class="bg-white rounded shadow-sm">
+									<div class="card payment-block">
+									    <div class="card-header plan-name">
+									        <h3 class="card-title" id="plan-name">Default Package</h3>
+									        <span id="payment_cycle">Recurring</span>
+									    </div>
+									    <div class="card-body">
+									        <div class="plan-price">
+												<span>Transactional Plan at</span>
+												<table class="table">
+													<tbody>
+														<tr style="display: none;">
+															<td width="50%" id="email-setup">Email Setup</td>
+															<td width="50%" class="text-right" id="emails-setup-price">$0.00</td>
+														</tr>
+														<tr>
+															<td width="50%" id="email-count">6000 Emails</td>
+															<td width="50%" class="text-right" id="emails-price">$0</td>
+														</tr>
+														
+														<tr>
+															<td colspan="2" id="configOptionsData"></td>															
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="payable">
+												<table class="table">
+													<tbody>
+														<tr>
+															<th width="50%">Due now</th>
+															<th class="text-right" id="pricemain">$0</th>
+														</tr>
+														<tr class="recurring">
+															<th width="50%">Recurring</th>
+															<th class="text-right" id="recurring_amount">$0</th>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="pay-here" id="pay-here">
+												
+											</div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" tabindex="-1" id="order-status">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">		
+					<div class="modal-body">
+						<div class="card-px text-center py-10">
+							<div class="processing-block" style="display: block;">
+								<h2 class="fs-2x fw-bolder mb-10">Payment Processing</h2>
+								<span class="spinner-border spinner-border-lg align-middle text-primary pay-process"></span>
+								<p class="text-gray-400 fs-5 fw-bold">Wait while payment in processing...</p>
+							</div>
+							<div class="payment-declain" style="display: none;">
+								<h2 class="fs-2x fw-bolder mb-10 text-danger">Payment has been cancelled</h2>
+								<p class="text-gray-400 fs-5 fw-bold mb-10">Click on the below buttons to launch
+								<br>a upgrade plan example.</p>
+								<a href="#" class="btn btn-danger er fs-6 px-8 py-4"  data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+							</div>
+							<div class="payment-success" style="display: none;">
+								<h2 class="fs-2x fw-bolder mb-10 text-success">Payment Successful</h2>
+								<span class="spinner-border spinner-border-lg align-middle text-success pay-process"></span>
+								<p class="text-gray-400 fs-5 fw-bold">Congratulations, the payment has been successfully made. <br />We are now setitng up your account.
+								</p>
+							</div>
+							<div class="process-ok" style="display: none;">
+								<i class="la la-check-circle text-success"></i>
+								<h4>You Paid 
+									<b id="payament_model">$50.00 USD</b>
+									<br>
+									<span id="ifSubscribe"> and set up a subscription </span>
+								</h4>
+							</div>
+							<div class="go-dash" style="display: none;">
+								<h2 class="fs-2x fw-bolder mb-10">MumaraOne</h2>
+								<span class="spinner-border spinner-border-lg align-middle text-primary pay-process"></span>
+								<p class="text-gray-400 fs-5 fw-bold">Redirecting you to Mumara ONE Dashboad in 10 seconds</p>
+								<p class="text-gray-400 fs-5 fw-bold">
+									<small> If you are not automatically redirected to Mumara ONE Dashboard then 
+										<a class="GoLink" href="javascript:;">Click Here</a>
+									</small>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/plugins.bundle.js"></script>
+		<script src="js/scripts.bundle.js"></script>
+		<script src="js/step1form.js"></script>
+		<script src="js/step2form.js"></script>
+		<script src="js/new-card.js"></script>
+		<script src="js/intlTelInput.js"></script>
+		<script src="js/order.js"></script>
+	</body>
+</html>
