@@ -103,14 +103,15 @@ var KTSignupGeneral = function() {
                             setTimeout(function() {
                                 sameAsBilling()
                                 $("#kt_accordion_1_body_2").removeClass("show");
-                                $("#kt_accordion_1_body_3").addClass("show");
+                                $("#kt_accordion_1_body_4").addClass("show");
                                 $("#kt_accordion_1_header_2 button").addClass("collapsed");
-                                $("#kt_accordion_1_header_3 button").removeClass("collapsed");
-                                $("#card3").removeClass("remain");
+                                $("#kt_accordion_1_header_4 button").removeClass("collapsed");
+                                $("#card4").removeClass("remain");
                                 $("#card2").addClass("done");
-                                $("#nav3>a").addClass("active");
+                                $("#nav4>a").addClass("active");
                                 $("#nav2>a").removeClass("active");
                                 $("#edit2").show();
+                                $("#kt_modal_new_card_submit").removeAttr("disabled")
                                 $("#loading").hide();
                             }, 1000);
                         }
