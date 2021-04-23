@@ -128,7 +128,13 @@ var KTSignupGeneral = function() {
                         //         //form.submit();
                         //     }
                         // });
+                        var firstname = $("#first-name").val();
+                        var lastname = $("#last-name").val();
+                        localStorage.setItem("fname", firstname);
+                        localStorage.setItem("lname", lastname);
+                        //alert(localStorage.getItem("fname"));
                         $("#loading").show();
+
                         setTimeout(function() {
                             $("#loading").hide();
                             window.location.href = './order.html'

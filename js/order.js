@@ -170,8 +170,8 @@ function sameAsBilling() {
 
 $(document).ready(function() {
 
-  $("#first-name").val("Shahbaz");
-  $("#last-name").val("Mughal");
+  $("#first-name").val(localStorage.getItem("fname"));
+  $("#last-name").val(localStorage.getItem("lname"));
   $("#plan-name").text("Default Package");
   $("#payment_cycle").text("Recurring");
   $("#email-count").text("6000 Email");
@@ -289,13 +289,14 @@ $(document).ready(function() {
   var ccode2 = 92;
 
   $("#country").on("change", function() {
+    console.log();
     var DialCodeid = $(this).val();
     ccode = $("#dialCode_" + DialCodeid).attr("data");
     $("#ccode").val(ccode);
-    $("#phone").intlTelInput("setNumber", "" + ccode);
+    $("#phone").intlTelInput("setNumber", "+" + DialCodeid);
     if ($('#same-billing').is(":checked")) {
       $("#ccode2").val(ccode);
-      $("#phone2").intlTelInput("setNumber", "+" + ccode);
+      $("#phone2").intlTelInput("setNumber", "+" + DialCodeid);
       $("#phone2").val($("#phone").val());
       //sameAsBilling();
     }
